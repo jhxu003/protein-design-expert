@@ -6,3 +6,6 @@ __pycache__/
 dist/
 build/
 *.pdb
+
+# External data repos (cloned for reference, not tracked)
+data/de_novo_binder_scoring/

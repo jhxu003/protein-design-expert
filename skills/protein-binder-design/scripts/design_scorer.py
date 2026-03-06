@@ -2,8 +2,15 @@
 Composite scoring engine for protein binder designs.
 
 Combines multiple AF2/AF3 prediction metrics into a single composite score
-using expert-calibrated weights and normalization ranges. Assigns designs
-to quality tiers (gold/silver/bronze/reject) and produces ranked outputs.
+using weights informed by large-scale experimental validation data. Assigns
+designs to quality tiers (gold/silver/bronze/reject) and produces ranked
+outputs.
+
+Data source: Overath et al. 2025, "Scoring metrics for de novo protein
+binder design across 15 targets" -- meta-analysis of 3,760 experimentally
+tested designs (436 confirmed binders, 11.6% overall success rate) across
+15 diverse targets. Per-target success rates range from 2.1% to 57.3%.
+Repository: DigBioLab/de_novo_binder_scoring
 """
 
 from dataclasses import dataclass, field
@@ -17,6 +24,34 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from filter_engine import DesignMetrics, load_designs_csv
 
 
+# ── Data-driven feature ranking ──────────────────────────────────────────────
+#
+# Median Average Precision (AP) across 15 targets from Overath et al. 2025.
+# These values quantify each feature's ability to discriminate true binders
+# from non-binders in a target-independent manner.
+#
+# Best single predictor: AF3 ipSAE_min (median AP = 0.5399)
+# Best 3-feature logistic regression: ipSAE_min + RMSD_binder + interface_sc
+#   -> median AP = 0.573, precision@F1 = 0.538
+#   (vs. ipSAE_min alone: median AP = 0.540, precision@F1 = 0.465)
+# Best interaction feature: AF3 LIS * input_interface_sc (median AP = 0.5752)
+# Optimal filter thresholds: RMSD_binder < 3.73 A, input_interface_sc > 0.62
+
+DATA_DRIVEN_FEATURE_RANKING = {
+    # Feature name (AF3)                        Median AP
+    "af3_ipSAE_min":                             0.5399,
+    "af3_iptm_avg":                              0.5212,
+    "af3_ipSAE_d0chn":                           0.5170,
+    "af3_iptm_model_0":                          0.5098,
+    "af3_min_pae_contact":                        0.4898,
+    "af3_pDockQ2_max":                           0.4524,
+    "af3_ipae":                                  0.4358,
+    "RMSD_chA_aft_chB_align_input_af3":          0.3038,
+    "af3_rosetta_interface_dG":                   0.3092,
+    "af3_rosetta_interface_dG_SASA_ratio":        0.2849,
+}
+
+
 # ── Data structures ──────────────────────────────────────────────────────────
 
 @dataclass
@@ -24,19 +59,30 @@ class ScoringWeights:
     """
     Weights for composite score computation.
 
-    Defaults reflect expert consensus:
-    - ipSAE is the best single predictor of binding success
-    - ipTM is the second best predictor
-    - pLDDT catches misfolding (Type I failures)
-    - Remaining metrics provide complementary signal
+    Defaults are informed by the Overath et al. 2025 meta-analysis of 3,760
+    de novo binder designs across 15 targets (436 confirmed binders):
+
+    - ipSAE (0.30): Best single predictor, median AP = 0.5399
+    - ipTM (0.25): Second best predictor, median AP = 0.5212
+    - pLDDT (0.12): Catches misfolding but was NOT among top individual
+      predictors in the meta-analysis; weight reduced accordingly
+    - pAE (0.08): Related to af3_ipae (median AP = 0.4358) and
+      af3_min_pae_contact (median AP = 0.4898)
+    - interface_area (0.08): Interface area/energy metrics ranked lower
+      (dG median AP = 0.3092); weight reduced
+    - shape_complementarity (0.10): Part of the best 3-feature logistic
+      regression model (ipSAE_min + RMSD_binder + interface_sc, median
+      AP = 0.573); weight increased from 0.05
+    - hotspot_contact (0.07): Design-specific contact quality; not directly
+      benchmarked in the meta-analysis but captures target-specific intent
     """
     ipsae: float = 0.30
     iptm: float = 0.25
-    plddt: float = 0.15
-    pae: float = 0.10
-    interface_area: float = 0.10
-    shape_complementarity: float = 0.05
-    hotspot_contact: float = 0.05
+    plddt: float = 0.12
+    pae: float = 0.08
+    interface_area: float = 0.08
+    shape_complementarity: float = 0.10
+    hotspot_contact: float = 0.07
 
     def to_dict(self) -> dict:
         return {k: v for k, v in self.__dict__.items()}
@@ -49,6 +95,40 @@ class ScoringWeights:
         """Check that weights sum to approximately 1.0."""
         total = sum(self.__dict__.values())
         return abs(total - 1.0) < 0.01
+
+    @classmethod
+    def data_driven(cls) -> "ScoringWeights":
+        """
+        Alternative weights proportional to median AP values from the
+        Overath et al. 2025 meta-analysis (3,760 designs, 15 targets).
+
+        Mapped features and their median AP:
+          ipSAE  -> af3_ipSAE_min:       0.5399
+          ipTM   -> af3_iptm_avg:        0.5212
+          pLDDT  -> (not ranked; use af3_pDockQ2_max as proxy): 0.4524
+          pAE    -> af3_min_pae_contact:  0.4898
+          interface_area -> af3_rosetta_interface_dG: 0.3092
+          shape_complementarity -> input_interface_sc (in best 3-feature
+                                   model; use af3_ipSAE_d0chn proxy): 0.5170
+          hotspot_contact -> (design-specific; use af3_ipae): 0.4358
+
+        Raw APs are normalized to sum to 1.0.
+        """
+        raw = {
+            "ipsae": 0.5399,
+            "iptm": 0.5212,
+            "plddt": 0.4524,
+            "pae": 0.4898,
+            "interface_area": 0.3092,
+            "shape_complementarity": 0.5170,
+            "hotspot_contact": 0.4358,
+        }
+        total = sum(raw.values())
+        normalized = {k: round(v / total, 4) for k, v in raw.items()}
+        # Adjust last weight so they sum exactly to 1.0
+        diff = 1.0 - sum(normalized.values())
+        normalized["hotspot_contact"] = round(normalized["hotspot_contact"] + diff, 4)
+        return cls(**normalized)
 
 
 @dataclass
@@ -101,8 +181,10 @@ class DesignScorer:
     """
     Composite scoring engine for protein binder designs.
 
-    Normalizes each metric to 0-1, applies expert-calibrated weights,
-    and assigns quality tiers.
+    Normalizes each metric to 0-1, applies weights informed by the
+    Overath et al. 2025 meta-analysis, and assigns quality tiers.
+    Use ScoringWeights() for default weights or
+    ScoringWeights.data_driven() for weights proportional to median AP.
     """
 
     def __init__(self, weights: Optional[ScoringWeights] = None):

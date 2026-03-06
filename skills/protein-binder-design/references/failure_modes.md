@@ -151,6 +151,16 @@ When analyzing an entire design pool, look for these systematic patterns:
 
 ---
 
+## Scoring Model Complexity (Overath et al. 2025)
+
+A key finding from the Overath et al. 2025 meta-analysis (3,760 designs, 15 targets) is that **complex scoring models are unnecessary**. Simple logistic regression with just 2-3 features (ipSAE_min ranking + RMSD binder < 3.73 A + shape_complementarity > 0.62) generalizes across targets as well as XGBoost trained on hundreds of features. This means:
+
+- **Overfitting risk**: Complex multi-feature scoring models (random forests, gradient boosting with many features) tend to overfit to specific targets and do not generalize
+- **Actionable implication**: When building custom scoring pipelines, prefer simple filters with a small number of well-validated metrics over elaborate ML models
+- **Avoid stacking weak predictors**: Adding more low-quality metrics does not improve discrimination and can hurt generalization
+
+---
+
 ## Diagnostic Flowchart
 
 ```

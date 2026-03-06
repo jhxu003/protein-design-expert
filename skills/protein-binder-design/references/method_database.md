@@ -176,6 +176,20 @@ IF epitope_type == "edge_strand" AND hydrophilicity > 0.50:
 
 ---
 
+## Meta-Analysis Data Sources (Overath et al. 2025)
+
+The Overath et al. 2025 meta-analysis aggregated experimental binding data from the following major studies, providing the largest unified dataset (3,760 designs, 436 binders, 15 targets) for benchmarking scoring metrics:
+
+- **Watson et al.** — RFdiffusion prospective designs
+- **Cao et al.** — Early de novo binder design campaigns
+- **Adaptyv Bio competition** — Community-wide binder design challenge
+- **Bennett et al.** — Prospective binder design studies
+- **Vazquez-Torres et al.** — Additional experimental characterization data
+
+This dataset is publicly available at [DigBioLab/de_novo_binder_scoring](https://github.com/DigBioLab/de_novo_binder_scoring) and serves as a benchmark for evaluating computational scoring methods.
+
+---
+
 ## Method Selection Quick Reference
 
 | Criterion | Recommended Method |

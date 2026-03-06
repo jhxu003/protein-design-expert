@@ -264,11 +264,12 @@ graph TD
 
 ```mermaid
 pie title Knowledge Sources
-    "3,766 Experimental Binders (Meta-analysis)" : 35
-    "Adaptyv Bio Competition Data (EGFR)" : 20
-    "BenchBB Benchmark (7 targets)" : 15
+    "Overath et al. Meta-Analysis (3,760 binders, 15 targets)" : 40
+    "Adaptyv Bio Competition Data (EGFR)" : 15
+    "BenchBB Benchmark (7 targets)" : 10
     "BindCraft / Latent-X / PXDesign Papers" : 20
     "Beta-pairing RFdiffusion Study" : 10
+    "Watson et al. RFdiffusion" : 5
 ```
 
 ### Method Decision Engine
@@ -325,6 +326,34 @@ protein-design-expert/
 ## 🧠 Expert Knowledge at a Glance
 
 <details>
+<summary><b>📊 Data-Validated Scoring (Overath et al. 2025)</b></summary>
+
+This system incorporates actual data from the [largest published meta-analysis](https://doi.org/10.1101/2025.08.14.670059) of de novo binder design:
+
+| Metric | Dataset |
+|:-------|:--------|
+| **Designs tested** | 3,760 |
+| **Confirmed binders** | 436 (11.6%) |
+| **Targets** | 15 diverse proteins |
+| **Features extracted** | 200+ per design |
+| **Prediction tools** | AF2, AF3, ColabFold, Boltz-1 |
+
+**Best scoring model** (nested leave-one-out CV):
+
+| Model | Median AP | Precision@F1 |
+|:------|:---------:|:------------:|
+| ipSAE_min only | 0.540 | 0.465 |
+| + Cα RMSD binder | 0.546 | 0.500 |
+| + Shape complementarity | 0.545 | 0.500 |
+| **All 3 features** | **0.573** | **0.538** |
+
+**Key insight**: Simple 2-3 feature logistic regression generalizes as well as XGBoost with hundreds of features.
+
+**Data-validated filter thresholds**: Cα RMSD < 3.73 Å, shape complementarity > 0.62
+
+</details>
+
+<details>
 <summary><b>📋 Filtering Thresholds</b></summary>
 
 | Metric | Pass | Gray Zone | Fail | Direction |
@@ -357,17 +386,17 @@ protein-design-expert/
 <details>
 <summary><b>⚖️ Scoring Weights</b></summary>
 
-| Metric | Weight | Rationale |
-|:-------|:------:|:----------|
-| **ipSAE** | 30% | Best single predictor (1.4× better than ipAE) |
-| **ipTM** | 25% | Strong interface confidence signal |
-| **pLDDT** | 15% | Structural confidence |
-| **PAE** | 10% | Complementary to ipTM |
-| **Interface area** | 10% | Geometric constraint |
-| **Shape complementarity** | 5% | Packing quality |
-| **Hotspot contact rate** | 5% | Design-specific engagement |
+| Metric | Weight | Median AP | Rationale |
+|:-------|:------:|:---------:|:----------|
+| **ipSAE** | 30% | 0.540 | Best single predictor (1.4× better than ipAE) |
+| **ipTM** | 25% | 0.521 | Second best predictor |
+| **pLDDT** | 12% | — | Structural confidence (catches Type I failures) |
+| **Shape complementarity** | 10% | — | Part of best 3-feature model (threshold: >0.62) |
+| **PAE** | 8% | 0.490 | Complementary to ipTM |
+| **Interface area** | 8% | — | Geometric constraint |
+| **Hotspot contact rate** | 7% | — | Design-specific engagement |
 
-Weights derived from meta-analysis of 3,766 experimentally characterized binders.
+Weights informed by feature ranking from [Overath et al. 2025](https://doi.org/10.1101/2025.08.14.670059) meta-analysis of 3,760 experimentally tested binders across 15 targets. ipSAE confirmed as best single predictor (median AP=0.54), ipTM as second best (AP=0.52). See `references/meta_analysis_data.md` for complete data.
 
 </details>
 
@@ -417,7 +446,7 @@ This system's expert knowledge is derived from:
 - **Latent-X** — Khalil et al., 2025. All-atom frontier model.
 - **PXDesign** — 2025. Fast modular binder design.
 - **β-pairing RFdiffusion** — Sahtoe et al., *Nature Communications* 2026.
-- **ipSAE scoring** — Meta-analysis of 3,766 binders, *bioRxiv* 2025.
+- **Binder Scoring Meta-Analysis** — Overath et al., *bioRxiv* 2025. [Dataset](https://github.com/DigBioLab/de_novo_binder_scoring) of 3,760 binders across 15 targets with 200+ features. Feature ranking, logistic regression models, and filter thresholds incorporated into this system.
 - **RFdiffusion** — Watson et al., *Nature* 2023.
 - **ProteinMPNN** — Dauparas et al., *Science* 2022.
 - **BenchBB** — Adaptyv Bio benchmark, 7 diverse targets.
