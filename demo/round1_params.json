@@ -1,0 +1,9 @@
+{
+    "method": "RFdiffusion",
+    "hotspots": [340, 352, 364, 376, 388],
+    "contig": "B1-80",
+    "num_designs": 500,
+    "mpnn_num_seqs": 100,
+    "mpnn_temperature": 0.1,
+    "noise_scale": 1.0
+}
