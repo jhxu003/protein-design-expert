@@ -1,0 +1,1217 @@
+{
+  "EGFR": {
+    "n_designs": 434,
+    "n_binders": 28,
+    "success_rate": 0.0645,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.595,
+        "q25": 0.355,
+        "q75": 0.669,
+        "n": 28
+      },
+      "iptm_avg": {
+        "median": 0.84,
+        "q25": 0.6,
+        "q75": 0.9,
+        "n": 28
+      },
+      "rmsd_binder": {
+        "median": 21.27,
+        "q25": 3.7,
+        "q75": 35.42,
+        "n": 28
+      },
+      "interface_sc": {
+        "median": 0.65,
+        "q25": 0.62,
+        "q75": 0.69,
+        "n": 28
+      },
+      "interface_dG": {
+        "median": -53.31,
+        "q25": -66.47,
+        "q75": -41.18,
+        "n": 28
+      },
+      "delta_SASA": {
+        "median": 1094.836,
+        "q25": 888.999,
+        "q75": 1559.902,
+        "n": 28
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.039,
+        "q25": 0.0,
+        "q75": 0.401,
+        "n": 406
+      },
+      "iptm_avg": {
+        "median": 0.55,
+        "q25": 0.28,
+        "q75": 0.84,
+        "n": 406
+      },
+      "rmsd_binder": {
+        "median": 20.86,
+        "q25": 10.31,
+        "q75": 37.67,
+        "n": 406
+      },
+      "interface_sc": {
+        "median": 0.62,
+        "q25": 0.57,
+        "q75": 0.67,
+        "n": 406
+      },
+      "interface_dG": {
+        "median": -44.21,
+        "q25": -56.18,
+        "q75": -32.49,
+        "n": 406
+      },
+      "delta_SASA": {
+        "median": 1069.357,
+        "q25": 804.611,
+        "q75": 1371.932,
+        "n": 406
+      }
+    }
+  },
+  "FGFR2": {
+    "n_designs": 2123,
+    "n_binders": 193,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.44,
+        "q25": 0.046,
+        "q75": 0.66,
+        "n": 193
+      },
+      "iptm_avg": {
+        "median": 0.74,
+        "q25": 0.36,
+        "q75": 0.85,
+        "n": 193
+      },
+      "rmsd_binder": {
+        "median": 3.46,
+        "q25": 2.45,
+        "q75": 16.28,
+        "n": 193
+      },
+      "interface_sc": {
+        "median": 0.73,
+        "q25": 0.71,
+        "q75": 0.76,
+        "n": 193
+      },
+      "interface_dG": {
+        "median": -45.76,
+        "q25": -53.44,
+        "q75": -39.33,
+        "n": 193
+      },
+      "delta_SASA": {
+        "median": 813.401,
+        "q25": 746.229,
+        "q75": 875.792,
+        "n": 193
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.032,
+        "q25": 0.015,
+        "q75": 0.155,
+        "n": 1930
+      },
+      "iptm_avg": {
+        "median": 0.36,
+        "q25": 0.29,
+        "q75": 0.5,
+        "n": 1930
+      },
+      "rmsd_binder": {
+        "median": 18.69,
+        "q25": 10.09,
+        "q75": 21.94,
+        "n": 1930
+      },
+      "interface_sc": {
+        "median": 0.72,
+        "q25": 0.69,
+        "q75": 0.75,
+        "n": 1930
+      },
+      "interface_dG": {
+        "median": -39.41,
+        "q25": -44.86,
+        "q75": -34.65,
+        "n": 1930
+      },
+      "delta_SASA": {
+        "median": 795.402,
+        "q25": 724.706,
+        "q75": 871.067,
+        "n": 1930
+      }
+    }
+  },
+  "IL10Ra": {
+    "n_designs": 22,
+    "n_binders": 2,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.011,
+        "q25": 0.0,
+        "q75": 0.011,
+        "n": 2
+      },
+      "iptm_avg": {
+        "median": 0.29,
+        "q25": 0.23,
+        "q75": 0.29,
+        "n": 2
+      },
+      "rmsd_binder": {
+        "median": 53.56,
+        "q25": 53.33,
+        "q75": 53.56,
+        "n": 2
+      },
+      "interface_sc": {
+        "median": 0.68,
+        "q25": 0.66,
+        "q75": 0.68,
+        "n": 2
+      },
+      "interface_dG": {
+        "median": -24.82,
+        "q25": -32.85,
+        "q75": -24.82,
+        "n": 2
+      },
+      "delta_SASA": {
+        "median": 633.794,
+        "q25": 617.538,
+        "q75": 633.794,
+        "n": 2
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 0.09,
+        "n": 20
+      },
+      "iptm_avg": {
+        "median": 0.27,
+        "q25": 0.21,
+        "q75": 0.56,
+        "n": 20
+      },
+      "rmsd_binder": {
+        "median": 43.71,
+        "q25": 36.88,
+        "q75": 54.69,
+        "n": 20
+      },
+      "interface_sc": {
+        "median": 0.62,
+        "q25": 0.59,
+        "q75": 0.68,
+        "n": 20
+      },
+      "interface_dG": {
+        "median": -29.12,
+        "q25": -41.73,
+        "q75": -14.6,
+        "n": 20
+      },
+      "delta_SASA": {
+        "median": 635.807,
+        "q25": 478.874,
+        "q75": 811.445,
+        "n": 20
+      }
+    }
+  },
+  "IL2Ra": {
+    "n_designs": 66,
+    "n_binders": 6,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.712,
+        "q25": 0.662,
+        "q75": 0.713,
+        "n": 6
+      },
+      "iptm_avg": {
+        "median": 0.91,
+        "q25": 0.9,
+        "q75": 0.91,
+        "n": 6
+      },
+      "rmsd_binder": {
+        "median": 4.84,
+        "q25": 4.15,
+        "q75": 4.94,
+        "n": 6
+      },
+      "interface_sc": {
+        "median": 0.65,
+        "q25": 0.62,
+        "q75": 0.68,
+        "n": 6
+      },
+      "interface_dG": {
+        "median": -64.19,
+        "q25": -66.88,
+        "q75": -58.35,
+        "n": 6
+      },
+      "delta_SASA": {
+        "median": 1218.784,
+        "q25": 1041.774,
+        "q75": 1277.097,
+        "n": 6
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.407,
+        "q25": 0.134,
+        "q75": 0.561,
+        "n": 60
+      },
+      "iptm_avg": {
+        "median": 0.79,
+        "q25": 0.59,
+        "q75": 0.85,
+        "n": 60
+      },
+      "rmsd_binder": {
+        "median": 4.85,
+        "q25": 4.16,
+        "q75": 5.92,
+        "n": 60
+      },
+      "interface_sc": {
+        "median": 0.62,
+        "q25": 0.6,
+        "q75": 0.67,
+        "n": 60
+      },
+      "interface_dG": {
+        "median": -47.01,
+        "q25": -56.24,
+        "q75": -39.8,
+        "n": 60
+      },
+      "delta_SASA": {
+        "median": 953.435,
+        "q25": 879.981,
+        "q75": 1056.415,
+        "n": 60
+      }
+    }
+  },
+  "IL7Ra": {
+    "n_designs": 171,
+    "n_binders": 38,
+    "success_rate": 0.2222,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.616,
+        "q25": 0.546,
+        "q75": 0.692,
+        "n": 38
+      },
+      "iptm_avg": {
+        "median": 0.86,
+        "q25": 0.82,
+        "q75": 0.88,
+        "n": 38
+      },
+      "rmsd_binder": {
+        "median": 2.04,
+        "q25": 1.58,
+        "q75": 2.66,
+        "n": 38
+      },
+      "interface_sc": {
+        "median": 0.66,
+        "q25": 0.63,
+        "q75": 0.73,
+        "n": 38
+      },
+      "interface_dG": {
+        "median": -49.05,
+        "q25": -55.84,
+        "q75": -43.64,
+        "n": 38
+      },
+      "delta_SASA": {
+        "median": 886.183,
+        "q25": 796.497,
+        "q75": 997.64,
+        "n": 38
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.417,
+        "q25": 0.013,
+        "q75": 0.573,
+        "n": 133
+      },
+      "iptm_avg": {
+        "median": 0.77,
+        "q25": 0.35,
+        "q75": 0.84,
+        "n": 133
+      },
+      "rmsd_binder": {
+        "median": 2.7,
+        "q25": 1.89,
+        "q75": 10.99,
+        "n": 133
+      },
+      "interface_sc": {
+        "median": 0.69,
+        "q25": 0.65,
+        "q75": 0.74,
+        "n": 133
+      },
+      "interface_dG": {
+        "median": -43.51,
+        "q25": -48.65,
+        "q75": -36.44,
+        "n": 133
+      },
+      "delta_SASA": {
+        "median": 857.868,
+        "q25": 770.532,
+        "q75": 961.628,
+        "n": 133
+      }
+    }
+  },
+  "InsulinR": {
+    "n_designs": 117,
+    "n_binders": 20,
+    "success_rate": 0.1709,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.687,
+        "q25": 0.607,
+        "q75": 0.766,
+        "n": 20
+      },
+      "iptm_avg": {
+        "median": 0.88,
+        "q25": 0.82,
+        "q75": 0.9,
+        "n": 20
+      },
+      "rmsd_binder": {
+        "median": 2.24,
+        "q25": 1.96,
+        "q75": 3.17,
+        "n": 20
+      },
+      "interface_sc": {
+        "median": 0.69,
+        "q25": 0.64,
+        "q75": 0.71,
+        "n": 20
+      },
+      "interface_dG": {
+        "median": -56.04,
+        "q25": -58.42,
+        "q75": -47.27,
+        "n": 20
+      },
+      "delta_SASA": {
+        "median": 985.772,
+        "q25": 916.255,
+        "q75": 1147.625,
+        "n": 20
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.505,
+        "q25": 0.251,
+        "q75": 0.676,
+        "n": 97
+      },
+      "iptm_avg": {
+        "median": 0.8,
+        "q25": 0.61,
+        "q75": 0.85,
+        "n": 97
+      },
+      "rmsd_binder": {
+        "median": 2.3,
+        "q25": 1.68,
+        "q75": 4.14,
+        "n": 97
+      },
+      "interface_sc": {
+        "median": 0.66,
+        "q25": 0.62,
+        "q75": 0.69,
+        "n": 97
+      },
+      "interface_dG": {
+        "median": -49.18,
+        "q25": -54.13,
+        "q75": -41.48,
+        "n": 97
+      },
+      "delta_SASA": {
+        "median": 980.433,
+        "q25": 885.706,
+        "q75": 1064.693,
+        "n": 97
+      }
+    }
+  },
+  "LTK": {
+    "n_designs": 33,
+    "n_binders": 3,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.57,
+        "q25": 0.565,
+        "q75": 0.623,
+        "n": 3
+      },
+      "iptm_avg": {
+        "median": 0.9,
+        "q25": 0.9,
+        "q75": 0.92,
+        "n": 3
+      },
+      "rmsd_binder": {
+        "median": 1.96,
+        "q25": 1.82,
+        "q75": 2.11,
+        "n": 3
+      },
+      "interface_sc": {
+        "median": 0.68,
+        "q25": 0.65,
+        "q75": 0.7,
+        "n": 3
+      },
+      "interface_dG": {
+        "median": -46.8,
+        "q25": -51.06,
+        "q75": -46.69,
+        "n": 3
+      },
+      "delta_SASA": {
+        "median": 917.488,
+        "q25": 915.329,
+        "q75": 936.679,
+        "n": 3
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.013,
+        "q25": 0.0,
+        "q75": 0.254,
+        "n": 30
+      },
+      "iptm_avg": {
+        "median": 0.43,
+        "q25": 0.32,
+        "q75": 0.79,
+        "n": 30
+      },
+      "rmsd_binder": {
+        "median": 16.47,
+        "q25": 2.77,
+        "q75": 19.57,
+        "n": 30
+      },
+      "interface_sc": {
+        "median": 0.66,
+        "q25": 0.62,
+        "q75": 0.68,
+        "n": 30
+      },
+      "interface_dG": {
+        "median": -41.21,
+        "q25": -50.14,
+        "q75": -35.77,
+        "n": 30
+      },
+      "delta_SASA": {
+        "median": 867.874,
+        "q25": 784.768,
+        "q75": 921.024,
+        "n": 30
+      }
+    }
+  },
+  "Mdm2": {
+    "n_designs": 96,
+    "n_binders": 55,
+    "success_rate": 0.5729,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.699,
+        "q25": 0.648,
+        "q75": 0.75,
+        "n": 55
+      },
+      "iptm_avg": {
+        "median": 0.89,
+        "q25": 0.86,
+        "q75": 0.9,
+        "n": 55
+      },
+      "rmsd_binder": {
+        "median": 2.42,
+        "q25": 1.97,
+        "q75": 3.11,
+        "n": 55
+      },
+      "interface_sc": {
+        "median": 0.67,
+        "q25": 0.64,
+        "q75": 0.7,
+        "n": 55
+      },
+      "interface_dG": {
+        "median": -54.53,
+        "q25": -59.09,
+        "q75": -49.94,
+        "n": 55
+      },
+      "delta_SASA": {
+        "median": 995.418,
+        "q25": 916.097,
+        "q75": 1070.315,
+        "n": 55
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.693,
+        "q25": 0.635,
+        "q75": 0.726,
+        "n": 41
+      },
+      "iptm_avg": {
+        "median": 0.87,
+        "q25": 0.85,
+        "q75": 0.89,
+        "n": 41
+      },
+      "rmsd_binder": {
+        "median": 2.78,
+        "q25": 2.2,
+        "q75": 3.57,
+        "n": 41
+      },
+      "interface_sc": {
+        "median": 0.66,
+        "q25": 0.62,
+        "q75": 0.69,
+        "n": 41
+      },
+      "interface_dG": {
+        "median": -52.99,
+        "q25": -56.61,
+        "q75": -48.09,
+        "n": 41
+      },
+      "delta_SASA": {
+        "median": 961.631,
+        "q25": 898.423,
+        "q75": 1020.982,
+        "n": 41
+      }
+    }
+  },
+  "Pdl1": {
+    "n_designs": 95,
+    "n_binders": 12,
+    "success_rate": 0.1263,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.794,
+        "q25": 0.783,
+        "q75": 0.798,
+        "n": 12
+      },
+      "iptm_avg": {
+        "median": 0.89,
+        "q25": 0.89,
+        "q75": 0.9,
+        "n": 12
+      },
+      "rmsd_binder": {
+        "median": 1.77,
+        "q25": 1.51,
+        "q75": 2.01,
+        "n": 12
+      },
+      "interface_sc": {
+        "median": 0.71,
+        "q25": 0.68,
+        "q75": 0.73,
+        "n": 12
+      },
+      "interface_dG": {
+        "median": -46.82,
+        "q25": -55.73,
+        "q75": -44.32,
+        "n": 12
+      },
+      "delta_SASA": {
+        "median": 927.517,
+        "q25": 875.206,
+        "q75": 974.36,
+        "n": 12
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.509,
+        "q25": 0.268,
+        "q75": 0.704,
+        "n": 83
+      },
+      "iptm_avg": {
+        "median": 0.76,
+        "q25": 0.63,
+        "q75": 0.85,
+        "n": 83
+      },
+      "rmsd_binder": {
+        "median": 2.03,
+        "q25": 1.56,
+        "q75": 7.31,
+        "n": 83
+      },
+      "interface_sc": {
+        "median": 0.63,
+        "q25": 0.58,
+        "q75": 0.66,
+        "n": 83
+      },
+      "interface_dG": {
+        "median": -44.01,
+        "q25": -49.92,
+        "q75": -37.68,
+        "n": 83
+      },
+      "delta_SASA": {
+        "median": 915.748,
+        "q25": 811.763,
+        "q75": 990.504,
+        "n": 83
+      }
+    }
+  },
+  "SARS_CoV2_RBD": {
+    "n_designs": 99,
+    "n_binders": 9,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.566,
+        "q25": 0.538,
+        "q75": 0.647,
+        "n": 9
+      },
+      "iptm_avg": {
+        "median": 0.86,
+        "q25": 0.83,
+        "q75": 0.9,
+        "n": 9
+      },
+      "rmsd_binder": {
+        "median": 3.03,
+        "q25": 2.17,
+        "q75": 15.16,
+        "n": 9
+      },
+      "interface_sc": {
+        "median": 0.71,
+        "q25": 0.7,
+        "q75": 0.72,
+        "n": 9
+      },
+      "interface_dG": {
+        "median": -52.73,
+        "q25": -53.73,
+        "q75": -38.97,
+        "n": 9
+      },
+      "delta_SASA": {
+        "median": 846.574,
+        "q25": 815.458,
+        "q75": 906.973,
+        "n": 9
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 0.013,
+        "n": 90
+      },
+      "iptm_avg": {
+        "median": 0.2,
+        "q25": 0.15,
+        "q75": 0.35,
+        "n": 90
+      },
+      "rmsd_binder": {
+        "median": 17.84,
+        "q25": 11.96,
+        "q75": 20.32,
+        "n": 90
+      },
+      "interface_sc": {
+        "median": 0.68,
+        "q25": 0.65,
+        "q75": 0.72,
+        "n": 90
+      },
+      "interface_dG": {
+        "median": -33.06,
+        "q25": -40.17,
+        "q75": -27.19,
+        "n": 90
+      },
+      "delta_SASA": {
+        "median": 835.841,
+        "q25": 727.742,
+        "q75": 922.458,
+        "n": 90
+      }
+    }
+  },
+  "TrkA": {
+    "n_designs": 128,
+    "n_binders": 9,
+    "success_rate": 0.0703,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.761,
+        "q25": 0.637,
+        "q75": 0.805,
+        "n": 9
+      },
+      "iptm_avg": {
+        "median": 0.89,
+        "q25": 0.82,
+        "q75": 0.9,
+        "n": 9
+      },
+      "rmsd_binder": {
+        "median": 2.15,
+        "q25": 2.04,
+        "q75": 2.33,
+        "n": 9
+      },
+      "interface_sc": {
+        "median": 0.71,
+        "q25": 0.68,
+        "q75": 0.73,
+        "n": 9
+      },
+      "interface_dG": {
+        "median": -49.02,
+        "q25": -54.05,
+        "q75": -48.38,
+        "n": 9
+      },
+      "delta_SASA": {
+        "median": 918.331,
+        "q25": 855.166,
+        "q75": 947.107,
+        "n": 9
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.628,
+        "q25": 0.27,
+        "q75": 0.713,
+        "n": 119
+      },
+      "iptm_avg": {
+        "median": 0.83,
+        "q25": 0.67,
+        "q75": 0.86,
+        "n": 119
+      },
+      "rmsd_binder": {
+        "median": 2.21,
+        "q25": 1.79,
+        "q75": 3.77,
+        "n": 119
+      },
+      "interface_sc": {
+        "median": 0.69,
+        "q25": 0.66,
+        "q75": 0.72,
+        "n": 119
+      },
+      "interface_dG": {
+        "median": -43.26,
+        "q25": -49.31,
+        "q75": -38.68,
+        "n": 119
+      },
+      "delta_SASA": {
+        "median": 813.242,
+        "q25": 750.366,
+        "q75": 889.676,
+        "n": 119
+      }
+    }
+  },
+  "VirB8": {
+    "n_designs": 99,
+    "n_binders": 9,
+    "success_rate": 0.0909,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.388,
+        "q25": 0.042,
+        "q75": 0.669,
+        "n": 9
+      },
+      "iptm_avg": {
+        "median": 0.78,
+        "q25": 0.42,
+        "q75": 0.87,
+        "n": 9
+      },
+      "rmsd_binder": {
+        "median": 3.46,
+        "q25": 2.78,
+        "q75": 25.14,
+        "n": 9
+      },
+      "interface_sc": {
+        "median": 0.78,
+        "q25": 0.74,
+        "q75": 0.78,
+        "n": 9
+      },
+      "interface_dG": {
+        "median": -48.7,
+        "q25": -59.33,
+        "q75": -37.26,
+        "n": 9
+      },
+      "delta_SASA": {
+        "median": 826.684,
+        "q25": 751.176,
+        "q75": 841.447,
+        "n": 9
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.014,
+        "q25": 0.012,
+        "q75": 0.017,
+        "n": 90
+      },
+      "iptm_avg": {
+        "median": 0.33,
+        "q25": 0.25,
+        "q75": 0.44,
+        "n": 90
+      },
+      "rmsd_binder": {
+        "median": 42.24,
+        "q25": 35.99,
+        "q75": 45.35,
+        "n": 90
+      },
+      "interface_sc": {
+        "median": 0.75,
+        "q25": 0.71,
+        "q75": 0.78,
+        "n": 90
+      },
+      "interface_dG": {
+        "median": -39.74,
+        "q25": -45.39,
+        "q75": -34.85,
+        "n": 90
+      },
+      "delta_SASA": {
+        "median": 799.202,
+        "q25": 722.317,
+        "q75": 863.819,
+        "n": 90
+      }
+    }
+  },
+  "pMHC_NY1": {
+    "n_designs": 132,
+    "n_binders": 43,
+    "success_rate": 0.3258,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.638,
+        "q25": 0.62,
+        "q75": 0.658,
+        "n": 43
+      },
+      "iptm_avg": {
+        "median": 0.95,
+        "q25": 0.94,
+        "q75": 0.95,
+        "n": 43
+      },
+      "rmsd_binder": {
+        "median": 1.17,
+        "q25": 1.06,
+        "q75": 1.25,
+        "n": 43
+      },
+      "interface_sc": {
+        "median": 0.65,
+        "q25": 0.63,
+        "q75": 0.67,
+        "n": 43
+      },
+      "interface_dG": {
+        "median": -72.62,
+        "q25": -76.33,
+        "q75": -68.95,
+        "n": 43
+      },
+      "delta_SASA": {
+        "median": 1469.652,
+        "q25": 1448.1,
+        "q75": 1498.246,
+        "n": 43
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.567,
+        "q25": 0.503,
+        "q75": 0.613,
+        "n": 89
+      },
+      "iptm_avg": {
+        "median": 0.94,
+        "q25": 0.92,
+        "q75": 0.94,
+        "n": 89
+      },
+      "rmsd_binder": {
+        "median": 1.28,
+        "q25": 1.09,
+        "q75": 1.59,
+        "n": 89
+      },
+      "interface_sc": {
+        "median": 0.63,
+        "q25": 0.6,
+        "q75": 0.65,
+        "n": 89
+      },
+      "interface_dG": {
+        "median": -67.9,
+        "q25": -72.99,
+        "q75": -62.15,
+        "n": 89
+      },
+      "delta_SASA": {
+        "median": 1464.811,
+        "q25": 1411.396,
+        "q75": 1519.881,
+        "n": 89
+      }
+    }
+  },
+  "pMHC_SILSY1": {
+    "n_designs": 96,
+    "n_binders": 2,
+    "success_rate": 0.0208,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.655,
+        "q25": 0.618,
+        "q75": 0.655,
+        "n": 2
+      },
+      "iptm_avg": {
+        "median": 0.95,
+        "q25": 0.94,
+        "q75": 0.95,
+        "n": 2
+      },
+      "rmsd_binder": {
+        "median": 1.54,
+        "q25": 1.28,
+        "q75": 1.54,
+        "n": 2
+      },
+      "interface_sc": {
+        "median": 0.65,
+        "q25": 0.63,
+        "q75": 0.65,
+        "n": 2
+      },
+      "interface_dG": {
+        "median": -62.73,
+        "q25": -72.74,
+        "q75": -62.73,
+        "n": 2
+      },
+      "delta_SASA": {
+        "median": 1696.621,
+        "q25": 1528.27,
+        "q75": 1696.621,
+        "n": 2
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.587,
+        "q25": 0.528,
+        "q75": 0.625,
+        "n": 94
+      },
+      "iptm_avg": {
+        "median": 0.94,
+        "q25": 0.94,
+        "q75": 0.95,
+        "n": 94
+      },
+      "rmsd_binder": {
+        "median": 1.32,
+        "q25": 1.19,
+        "q75": 1.81,
+        "n": 94
+      },
+      "interface_sc": {
+        "median": 0.62,
+        "q25": 0.59,
+        "q75": 0.64,
+        "n": 94
+      },
+      "interface_dG": {
+        "median": -65.14,
+        "q25": -69.32,
+        "q75": -61.35,
+        "n": 94
+      },
+      "delta_SASA": {
+        "median": 1574.295,
+        "q25": 1528.053,
+        "q75": 1627.055,
+        "n": 94
+      }
+    }
+  },
+  "sntx": {
+    "n_designs": 49,
+    "n_binders": 7,
+    "success_rate": 0.1429,
+    "binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.736,
+        "q25": 0.691,
+        "q75": 0.742,
+        "n": 7
+      },
+      "iptm_avg": {
+        "median": 0.89,
+        "q25": 0.87,
+        "q75": 0.89,
+        "n": 7
+      },
+      "rmsd_binder": {
+        "median": 1.64,
+        "q25": 1.2,
+        "q75": 1.87,
+        "n": 7
+      },
+      "interface_sc": {
+        "median": 0.65,
+        "q25": 0.63,
+        "q75": 0.69,
+        "n": 7
+      },
+      "interface_dG": {
+        "median": -58.07,
+        "q25": -59.48,
+        "q75": -55.94,
+        "n": 7
+      },
+      "delta_SASA": {
+        "median": 1015.316,
+        "q25": 1010.506,
+        "q75": 1071.784,
+        "n": 7
+      }
+    },
+    "non_binder_metrics": {
+      "ipSAE_min": {
+        "median": 0.436,
+        "q25": 0.227,
+        "q75": 0.509,
+        "n": 42
+      },
+      "iptm_avg": {
+        "median": 0.79,
+        "q25": 0.69,
+        "q75": 0.84,
+        "n": 42
+      },
+      "rmsd_binder": {
+        "median": 2.68,
+        "q25": 2.18,
+        "q75": 3.55,
+        "n": 42
+      },
+      "interface_sc": {
+        "median": 0.66,
+        "q25": 0.64,
+        "q75": 0.69,
+        "n": 42
+      },
+      "interface_dG": {
+        "median": -47.81,
+        "q25": -50.9,
+        "q75": -44.55,
+        "n": 42
+      },
+      "delta_SASA": {
+        "median": 862.054,
+        "q25": 759.512,
+        "q75": 947.356,
+        "n": 42
+      }
+    }
+  }
+}

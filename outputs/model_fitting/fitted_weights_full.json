@@ -1,0 +1,64 @@
+{
+  "model": "logistic_regression",
+  "feature_set": "7_feature_full",
+  "feature_names": [
+    "af3_ipSAE_min",
+    "af3_iptm_avg",
+    "RMSD_binder",
+    "input_interface_sc",
+    "af3_dG_SASA_ratio",
+    "af3_pDockQ2_max",
+    "af3_min_pae_contact"
+  ],
+  "weights": [
+    0.0824,
+    0.063033,
+    -0.051153,
+    0.013253,
+    -0.04864,
+    0.073107,
+    -0.047207
+  ],
+  "bias": -1.902393,
+  "standardization_params": [
+    {
+      "mean": 0.246433,
+      "std": 0.26578
+    },
+    {
+      "mean": 0.54008,
+      "std": 0.25812
+    },
+    {
+      "mean": 14.625487,
+      "std": 12.54552
+    },
+    {
+      "mean": 0.68864,
+      "std": 0.06878
+    },
+    {
+      "mean": -2.637007,
+      "std": 0.444387
+    },
+    {
+      "mean": 0.313967,
+      "std": 0.330233
+    },
+    {
+      "mean": 11.375867,
+      "std": 10.881347
+    }
+  ],
+  "performance": {
+    "median_AP": 0.603,
+    "mean_AP": 0.5294,
+    "global_AP": 0.3606
+  },
+  "training_data": {
+    "source": "Overath et al. 2025",
+    "n_designs": 3760,
+    "n_binders": 436,
+    "n_targets": 15
+  }
+}

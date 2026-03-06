@@ -1,0 +1,40 @@
+{
+  "model": "logistic_regression",
+  "feature_set": "ipSAE+RMSD+SC",
+  "feature_names": [
+    "af3_ipSAE_min",
+    "RMSD_binder",
+    "input_interface_sc"
+  ],
+  "weights": [
+    0.101473,
+    -0.060627,
+    0.01054
+  ],
+  "bias": -1.882173,
+  "standardization_params": [
+    {
+      "mean": 0.246433,
+      "std": 0.26578
+    },
+    {
+      "mean": 14.625487,
+      "std": 12.54552
+    },
+    {
+      "mean": 0.68864,
+      "std": 0.06878
+    }
+  ],
+  "performance": {
+    "median_AP": 0.5886,
+    "mean_AP": 0.5331,
+    "global_AP": 0.3105
+  },
+  "training_data": {
+    "source": "Overath et al. 2025",
+    "n_designs": 3760,
+    "n_binders": 436,
+    "n_targets": 15
+  }
+}

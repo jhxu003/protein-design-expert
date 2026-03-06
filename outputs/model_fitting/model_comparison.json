@@ -1,0 +1,2347 @@
+[
+  {
+    "feature_set": "ipSAE_min_only",
+    "feature_names": [
+      "af3_ipSAE_min"
+    ],
+    "n_features": 1,
+    "n_targets": 15,
+    "n_total": 3760,
+    "n_binders": 436,
+    "median_AP": 0.5445,
+    "mean_AP": 0.5289,
+    "global_AP": 0.2849,
+    "global_precision_at_10": 1.0,
+    "global_precision_at_20": 0.8,
+    "per_target": {
+      "EGFR": {
+        "n_designs": 434,
+        "n_binders": 28,
+        "success_rate": 0.0645,
+        "average_precision": 0.2477,
+        "precision_at_5": 0.2,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1554,
+        "weights": [
+          0.108
+        ],
+        "bias": -1.8397,
+        "standardization": [
+          [
+            0.2458,
+            0.2683
+          ]
+        ]
+      },
+      "FGFR2": {
+        "n_designs": 2123,
+        "n_binders": 193,
+        "success_rate": 0.0909,
+        "average_precision": 0.3829,
+        "precision_at_5": 1.0,
+        "precision_at_10": 1.0,
+        "precision_at_20": 0.8,
+        "f1_threshold": 0.1743,
+        "weights": [
+          0.1154
+        ],
+        "bias": -1.6647,
+        "standardization": [
+          [
+            0.363,
+            0.2868
+          ]
+        ]
+      },
+      "IL10Ra": {
+        "n_designs": 22,
+        "n_binders": 2,
+        "success_rate": 0.0909,
+        "average_precision": 0.1339,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.1,
+        "f1_threshold": 0.149,
+        "weights": [
+          0.1048
+        ],
+        "bias": -1.8864,
+        "standardization": [
+          [
+            0.2428,
+            0.266
+          ]
+        ]
+      },
+      "IL2Ra": {
+        "n_designs": 66,
+        "n_binders": 6,
+        "success_rate": 0.0909,
+        "average_precision": 0.8037,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1495,
+        "weights": [
+          0.1046
+        ],
+        "bias": -1.8842,
+        "standardization": [
+          [
+            0.2393,
+            0.2657
+          ]
+        ]
+      },
+      "IL7Ra": {
+        "n_designs": 171,
+        "n_binders": 38,
+        "success_rate": 0.2222,
+        "average_precision": 0.5289,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.55,
+        "f1_threshold": 0.1441,
+        "weights": [
+          0.1003
+        ],
+        "bias": -1.9241,
+        "standardization": [
+          [
+            0.235,
+            0.2638
+          ]
+        ]
+      },
+      "InsulinR": {
+        "n_designs": 117,
+        "n_binders": 20,
+        "success_rate": 0.1709,
+        "average_precision": 0.4288,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1479,
+        "weights": [
+          0.1042
+        ],
+        "bias": -1.9002,
+        "standardization": [
+          [
+            0.2341,
+            0.2626
+          ]
+        ]
+      },
+      "LTK": {
+        "n_designs": 33,
+        "n_binders": 3,
+        "success_rate": 0.0909,
+        "average_precision": 1.0,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.15,
+        "f1_threshold": 0.1489,
+        "weights": [
+          0.1037
+        ],
+        "bias": -1.8858,
+        "standardization": [
+          [
+            0.2426,
+            0.2663
+          ]
+        ]
+      },
+      "Mdm2": {
+        "n_designs": 96,
+        "n_binders": 55,
+        "success_rate": 0.5729,
+        "average_precision": 0.6508,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1366,
+        "weights": [
+          0.091
+        ],
+        "bias": -1.9748,
+        "standardization": [
+          [
+            0.2304,
+            0.2591
+          ]
+        ]
+      },
+      "Pdl1": {
+        "n_designs": 95,
+        "n_binders": 12,
+        "success_rate": 0.1263,
+        "average_precision": 0.5503,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.1493,
+        "weights": [
+          0.1051
+        ],
+        "bias": -1.8894,
+        "standardization": [
+          [
+            0.2352,
+            0.2629
+          ]
+        ]
+      },
+      "SARS_CoV2_RBD": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.6985,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1493,
+        "weights": [
+          0.1032
+        ],
+        "bias": -1.8825,
+        "standardization": [
+          [
+            0.2461,
+            0.2664
+          ]
+        ]
+      },
+      "TrkA": {
+        "n_designs": 128,
+        "n_binders": 9,
+        "success_rate": 0.0703,
+        "average_precision": 0.3061,
+        "precision_at_5": 0.2,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.2,
+        "f1_threshold": 0.1522,
+        "weights": [
+          0.1097
+        ],
+        "bias": -1.8762,
+        "standardization": [
+          [
+            0.2324,
+            0.2604
+          ]
+        ]
+      },
+      "VirB8": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.5445,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.4,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1492,
+        "weights": [
+          0.1041
+        ],
+        "bias": -1.8825,
+        "standardization": [
+          [
+            0.2462,
+            0.2667
+          ]
+        ]
+      },
+      "pMHC_NY1": {
+        "n_designs": 132,
+        "n_binders": 43,
+        "success_rate": 0.3258,
+        "average_precision": 0.6806,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1429,
+        "weights": [
+          0.0981
+        ],
+        "bias": -1.9429,
+        "standardization": [
+          [
+            0.2307,
+            0.2624
+          ]
+        ]
+      },
+      "pMHC_SILSY1": {
+        "n_designs": 96,
+        "n_binders": 2,
+        "success_rate": 0.0208,
+        "average_precision": 0.1048,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.05,
+        "f1_threshold": 0.1525,
+        "weights": [
+          0.1104
+        ],
+        "bias": -1.8699,
+        "standardization": [
+          [
+            0.2333,
+            0.2636
+          ]
+        ]
+      },
+      "sntx": {
+        "n_designs": 49,
+        "n_binders": 7,
+        "success_rate": 0.1429,
+        "average_precision": 0.8715,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1486,
+        "weights": [
+          0.1035
+        ],
+        "bias": -1.89,
+        "standardization": [
+          [
+            0.2396,
+            0.2657
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "feature_set": "ipSAE+RMSD",
+    "feature_names": [
+      "af3_ipSAE_min",
+      "RMSD_binder"
+    ],
+    "n_features": 2,
+    "n_targets": 15,
+    "n_total": 3760,
+    "n_binders": 436,
+    "median_AP": 0.5426,
+    "mean_AP": 0.5311,
+    "global_AP": 0.3296,
+    "global_precision_at_10": 1.0,
+    "global_precision_at_20": 0.8,
+    "per_target": {
+      "EGFR": {
+        "n_designs": 434,
+        "n_binders": 28,
+        "success_rate": 0.0645,
+        "average_precision": 0.3627,
+        "precision_at_5": 1.0,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.1636,
+        "weights": [
+          0.1034,
+          -0.0684
+        ],
+        "bias": -1.8433,
+        "standardization": [
+          [
+            0.2458,
+            0.2683
+          ],
+          [
+            13.3872,
+            11.0727
+          ]
+        ]
+      },
+      "FGFR2": {
+        "n_designs": 2123,
+        "n_binders": 193,
+        "success_rate": 0.0909,
+        "average_precision": 0.4231,
+        "precision_at_5": 1.0,
+        "precision_at_10": 1.0,
+        "precision_at_20": 0.8,
+        "f1_threshold": 0.1782,
+        "weights": [
+          0.1123,
+          -0.0541
+        ],
+        "bias": -1.667,
+        "standardization": [
+          [
+            0.363,
+            0.2868
+          ],
+          [
+            13.1596,
+            16.0737
+          ]
+        ]
+      },
+      "IL10Ra": {
+        "n_designs": 22,
+        "n_binders": 2,
+        "success_rate": 0.0909,
+        "average_precision": 0.0889,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.0,
+        "precision_at_20": 0.1,
+        "f1_threshold": 0.1558,
+        "weights": [
+          0.1015,
+          -0.0626
+        ],
+        "bias": -1.8892,
+        "standardization": [
+          [
+            0.2428,
+            0.266
+          ],
+          [
+            14.5448,
+            12.2421
+          ]
+        ]
+      },
+      "IL2Ra": {
+        "n_designs": 66,
+        "n_binders": 6,
+        "success_rate": 0.0909,
+        "average_precision": 0.6794,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1565,
+        "weights": [
+          0.1014,
+          -0.0619
+        ],
+        "bias": -1.887,
+        "standardization": [
+          [
+            0.2393,
+            0.2657
+          ],
+          [
+            14.8509,
+            12.4952
+          ]
+        ]
+      },
+      "IL7Ra": {
+        "n_designs": 171,
+        "n_binders": 38,
+        "success_rate": 0.2222,
+        "average_precision": 0.4985,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.55,
+        "f1_threshold": 0.1504,
+        "weights": [
+          0.0974,
+          -0.0589
+        ],
+        "bias": -1.9265,
+        "standardization": [
+          [
+            0.235,
+            0.2638
+          ],
+          [
+            15.0631,
+            12.4618
+          ]
+        ]
+      },
+      "InsulinR": {
+        "n_designs": 117,
+        "n_binders": 20,
+        "success_rate": 0.1709,
+        "average_precision": 0.433,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.4,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1557,
+        "weights": [
+          0.1011,
+          -0.0609
+        ],
+        "bias": -1.9029,
+        "standardization": [
+          [
+            0.2341,
+            0.2626
+          ],
+          [
+            15.0135,
+            12.4691
+          ]
+        ]
+      },
+      "LTK": {
+        "n_designs": 33,
+        "n_binders": 3,
+        "success_rate": 0.0909,
+        "average_precision": 1.0,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.15,
+        "f1_threshold": 0.1555,
+        "weights": [
+          0.1006,
+          -0.0608
+        ],
+        "bias": -1.8884,
+        "standardization": [
+          [
+            0.2426,
+            0.2663
+          ],
+          [
+            14.6952,
+            12.4448
+          ]
+        ]
+      },
+      "Mdm2": {
+        "n_designs": 96,
+        "n_binders": 55,
+        "success_rate": 0.5729,
+        "average_precision": 0.661,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.75,
+        "f1_threshold": 0.1425,
+        "weights": [
+          0.0885,
+          -0.0536
+        ],
+        "bias": -1.9769,
+        "standardization": [
+          [
+            0.2304,
+            0.2591
+          ],
+          [
+            14.9799,
+            12.4609
+          ]
+        ]
+      },
+      "Pdl1": {
+        "n_designs": 95,
+        "n_binders": 12,
+        "success_rate": 0.1263,
+        "average_precision": 0.5426,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.156,
+        "weights": [
+          0.102,
+          -0.0614
+        ],
+        "bias": -1.8921,
+        "standardization": [
+          [
+            0.2352,
+            0.2629
+          ],
+          [
+            14.9276,
+            12.4667
+          ]
+        ]
+      },
+      "SARS_CoV2_RBD": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.7025,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1556,
+        "weights": [
+          0.1,
+          -0.0607
+        ],
+        "bias": -1.8851,
+        "standardization": [
+          [
+            0.2461,
+            0.2664
+          ],
+          [
+            14.5694,
+            12.3641
+          ]
+        ]
+      },
+      "TrkA": {
+        "n_designs": 128,
+        "n_binders": 9,
+        "success_rate": 0.0703,
+        "average_precision": 0.3136,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.2,
+        "f1_threshold": 0.1593,
+        "weights": [
+          0.1065,
+          -0.0635
+        ],
+        "bias": -1.879,
+        "standardization": [
+          [
+            0.2324,
+            0.2604
+          ],
+          [
+            15.0342,
+            12.4686
+          ]
+        ]
+      },
+      "VirB8": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.5848,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1559,
+        "weights": [
+          0.101,
+          -0.0611
+        ],
+        "bias": -1.8852,
+        "standardization": [
+          [
+            0.2462,
+            0.2667
+          ],
+          [
+            14.1625,
+            11.906
+          ]
+        ]
+      },
+      "pMHC_NY1": {
+        "n_designs": 132,
+        "n_binders": 43,
+        "success_rate": 0.3258,
+        "average_precision": 0.665,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1478,
+        "weights": [
+          0.0955,
+          -0.0564
+        ],
+        "bias": -1.9452,
+        "standardization": [
+          [
+            0.2307,
+            0.2624
+          ],
+          [
+            15.1349,
+            12.3774
+          ]
+        ]
+      },
+      "pMHC_SILSY1": {
+        "n_designs": 96,
+        "n_binders": 2,
+        "success_rate": 0.0208,
+        "average_precision": 0.1204,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.05,
+        "f1_threshold": 0.1601,
+        "weights": [
+          0.1071,
+          -0.0648
+        ],
+        "bias": -1.8728,
+        "standardization": [
+          [
+            0.2333,
+            0.2636
+          ],
+          [
+            15.0258,
+            12.4264
+          ]
+        ]
+      },
+      "sntx": {
+        "n_designs": 49,
+        "n_binders": 7,
+        "success_rate": 0.1429,
+        "average_precision": 0.8917,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1552,
+        "weights": [
+          0.1004,
+          -0.0612
+        ],
+        "bias": -1.8926,
+        "standardization": [
+          [
+            0.2396,
+            0.2657
+          ],
+          [
+            14.8337,
+            12.4533
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "feature_set": "ipSAE+SC",
+    "feature_names": [
+      "af3_ipSAE_min",
+      "input_interface_sc"
+    ],
+    "n_features": 2,
+    "n_targets": 15,
+    "n_total": 3760,
+    "n_binders": 436,
+    "median_AP": 0.5498,
+    "mean_AP": 0.524,
+    "global_AP": 0.2603,
+    "global_precision_at_10": 0.8,
+    "global_precision_at_20": 0.7,
+    "per_target": {
+      "EGFR": {
+        "n_designs": 434,
+        "n_binders": 28,
+        "success_rate": 0.0645,
+        "average_precision": 0.2964,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.4,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1552,
+        "weights": [
+          0.108,
+          0.0022
+        ],
+        "bias": -1.8396,
+        "standardization": [
+          [
+            0.2458,
+            0.2683
+          ],
+          [
+            0.7002,
+            0.0582
+          ]
+        ]
+      },
+      "FGFR2": {
+        "n_designs": 2123,
+        "n_binders": 193,
+        "success_rate": 0.0909,
+        "average_precision": 0.3658,
+        "precision_at_5": 1.0,
+        "precision_at_10": 0.8,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1711,
+        "weights": [
+          0.1157,
+          0.031
+        ],
+        "bias": -1.6648,
+        "standardization": [
+          [
+            0.363,
+            0.2868
+          ],
+          [
+            0.651,
+            0.0746
+          ]
+        ]
+      },
+      "IL10Ra": {
+        "n_designs": 22,
+        "n_binders": 2,
+        "success_rate": 0.0909,
+        "average_precision": 0.1465,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.1,
+        "f1_threshold": 0.1491,
+        "weights": [
+          0.105,
+          0.0094
+        ],
+        "bias": -1.8863,
+        "standardization": [
+          [
+            0.2428,
+            0.266
+          ],
+          [
+            0.6904,
+            0.069
+          ]
+        ]
+      },
+      "IL2Ra": {
+        "n_designs": 66,
+        "n_binders": 6,
+        "success_rate": 0.0909,
+        "average_precision": 0.6454,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1495,
+        "weights": [
+          0.1049,
+          0.0089
+        ],
+        "bias": -1.8841,
+        "standardization": [
+          [
+            0.2393,
+            0.2657
+          ],
+          [
+            0.6911,
+            0.0688
+          ]
+        ]
+      },
+      "IL7Ra": {
+        "n_designs": 171,
+        "n_binders": 38,
+        "success_rate": 0.2222,
+        "average_precision": 0.5154,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.55,
+        "f1_threshold": 0.1431,
+        "weights": [
+          0.1006,
+          0.0118
+        ],
+        "bias": -1.924,
+        "standardization": [
+          [
+            0.235,
+            0.2638
+          ],
+          [
+            0.6902,
+            0.0693
+          ]
+        ]
+      },
+      "InsulinR": {
+        "n_designs": 117,
+        "n_binders": 20,
+        "success_rate": 0.1709,
+        "average_precision": 0.4018,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.4,
+        "precision_at_20": 0.4,
+        "f1_threshold": 0.1478,
+        "weights": [
+          0.1044,
+          0.009
+        ],
+        "bias": -1.9001,
+        "standardization": [
+          [
+            0.2341,
+            0.2626
+          ],
+          [
+            0.691,
+            0.0693
+          ]
+        ]
+      },
+      "LTK": {
+        "n_designs": 33,
+        "n_binders": 3,
+        "success_rate": 0.0909,
+        "average_precision": 1.0,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.15,
+        "f1_threshold": 0.149,
+        "weights": [
+          0.1039,
+          0.0095
+        ],
+        "bias": -1.8857,
+        "standardization": [
+          [
+            0.2426,
+            0.2663
+          ],
+          [
+            0.6903,
+            0.0692
+          ]
+        ]
+      },
+      "Mdm2": {
+        "n_designs": 96,
+        "n_binders": 55,
+        "success_rate": 0.5729,
+        "average_precision": 0.6819,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.8,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1359,
+        "weights": [
+          0.0913,
+          0.013
+        ],
+        "bias": -1.9747,
+        "standardization": [
+          [
+            0.2304,
+            0.2591
+          ],
+          [
+            0.6908,
+            0.0694
+          ]
+        ]
+      },
+      "Pdl1": {
+        "n_designs": 95,
+        "n_binders": 12,
+        "success_rate": 0.1263,
+        "average_precision": 0.6276,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.1493,
+        "weights": [
+          0.1053,
+          0.0077
+        ],
+        "bias": -1.8893,
+        "standardization": [
+          [
+            0.2352,
+            0.2629
+          ],
+          [
+            0.6915,
+            0.0687
+          ]
+        ]
+      },
+      "SARS_CoV2_RBD": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.6894,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1491,
+        "weights": [
+          0.1034,
+          0.0091
+        ],
+        "bias": -1.8824,
+        "standardization": [
+          [
+            0.2461,
+            0.2664
+          ],
+          [
+            0.6901,
+            0.0695
+          ]
+        ]
+      },
+      "TrkA": {
+        "n_designs": 128,
+        "n_binders": 9,
+        "success_rate": 0.0703,
+        "average_precision": 0.3038,
+        "precision_at_5": 0.2,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.25,
+        "f1_threshold": 0.1522,
+        "weights": [
+          0.11,
+          0.0097
+        ],
+        "bias": -1.8761,
+        "standardization": [
+          [
+            0.2324,
+            0.2604
+          ],
+          [
+            0.69,
+            0.0696
+          ]
+        ]
+      },
+      "VirB8": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.5498,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1485,
+        "weights": [
+          0.1043,
+          0.0099
+        ],
+        "bias": -1.8824,
+        "standardization": [
+          [
+            0.2462,
+            0.2667
+          ],
+          [
+            0.6886,
+            0.069
+          ]
+        ]
+      },
+      "pMHC_NY1": {
+        "n_designs": 132,
+        "n_binders": 43,
+        "success_rate": 0.3258,
+        "average_precision": 0.6938,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1421,
+        "weights": [
+          0.0984,
+          0.0129
+        ],
+        "bias": -1.9428,
+        "standardization": [
+          [
+            0.2307,
+            0.2624
+          ],
+          [
+            0.692,
+            0.0691
+          ]
+        ]
+      },
+      "pMHC_SILSY1": {
+        "n_designs": 96,
+        "n_binders": 2,
+        "success_rate": 0.0208,
+        "average_precision": 0.1178,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.05,
+        "f1_threshold": 0.1528,
+        "weights": [
+          0.1105,
+          0.0072
+        ],
+        "bias": -1.8698,
+        "standardization": [
+          [
+            0.2333,
+            0.2636
+          ],
+          [
+            0.692,
+            0.0687
+          ]
+        ]
+      },
+      "sntx": {
+        "n_designs": 49,
+        "n_binders": 7,
+        "success_rate": 0.1429,
+        "average_precision": 0.8242,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1478,
+        "weights": [
+          0.1038,
+          0.0101
+        ],
+        "bias": -1.8899,
+        "standardization": [
+          [
+            0.2396,
+            0.2657
+          ],
+          [
+            0.6904,
+            0.0693
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "feature_set": "ipSAE+RMSD+SC",
+    "feature_names": [
+      "af3_ipSAE_min",
+      "RMSD_binder",
+      "input_interface_sc"
+    ],
+    "n_features": 3,
+    "n_targets": 15,
+    "n_total": 3760,
+    "n_binders": 436,
+    "median_AP": 0.5886,
+    "mean_AP": 0.5331,
+    "global_AP": 0.3105,
+    "global_precision_at_10": 0.9,
+    "global_precision_at_20": 0.8,
+    "per_target": {
+      "EGFR": {
+        "n_designs": 434,
+        "n_binders": 28,
+        "success_rate": 0.0645,
+        "average_precision": 0.3671,
+        "precision_at_5": 1.0,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.4,
+        "f1_threshold": 0.1636,
+        "weights": [
+          0.1035,
+          -0.0685,
+          0.004
+        ],
+        "bias": -1.8432,
+        "standardization": [
+          [
+            0.2458,
+            0.2683
+          ],
+          [
+            13.3872,
+            11.0727
+          ],
+          [
+            0.7002,
+            0.0582
+          ]
+        ]
+      },
+      "FGFR2": {
+        "n_designs": 2123,
+        "n_binders": 193,
+        "success_rate": 0.0909,
+        "average_precision": 0.4091,
+        "precision_at_5": 1.0,
+        "precision_at_10": 0.9,
+        "precision_at_20": 0.8,
+        "f1_threshold": 0.1791,
+        "weights": [
+          0.1126,
+          -0.0537,
+          0.0301
+        ],
+        "bias": -1.6673,
+        "standardization": [
+          [
+            0.363,
+            0.2868
+          ],
+          [
+            13.1596,
+            16.0737
+          ],
+          [
+            0.651,
+            0.0746
+          ]
+        ]
+      },
+      "IL10Ra": {
+        "n_designs": 22,
+        "n_binders": 2,
+        "success_rate": 0.0909,
+        "average_precision": 0.0958,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.0,
+        "precision_at_20": 0.1,
+        "f1_threshold": 0.1564,
+        "weights": [
+          0.1018,
+          -0.0626,
+          0.0092
+        ],
+        "bias": -1.8891,
+        "standardization": [
+          [
+            0.2428,
+            0.266
+          ],
+          [
+            14.5448,
+            12.2421
+          ],
+          [
+            0.6904,
+            0.069
+          ]
+        ]
+      },
+      "IL2Ra": {
+        "n_designs": 66,
+        "n_binders": 6,
+        "success_rate": 0.0909,
+        "average_precision": 0.6718,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1566,
+        "weights": [
+          0.1017,
+          -0.0619,
+          0.0086
+        ],
+        "bias": -1.8869,
+        "standardization": [
+          [
+            0.2393,
+            0.2657
+          ],
+          [
+            14.8509,
+            12.4952
+          ],
+          [
+            0.6911,
+            0.0688
+          ]
+        ]
+      },
+      "IL7Ra": {
+        "n_designs": 171,
+        "n_binders": 38,
+        "success_rate": 0.2222,
+        "average_precision": 0.5018,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.55,
+        "f1_threshold": 0.1509,
+        "weights": [
+          0.0977,
+          -0.0588,
+          0.0115
+        ],
+        "bias": -1.9265,
+        "standardization": [
+          [
+            0.235,
+            0.2638
+          ],
+          [
+            15.0631,
+            12.4618
+          ],
+          [
+            0.6902,
+            0.0693
+          ]
+        ]
+      },
+      "InsulinR": {
+        "n_designs": 117,
+        "n_binders": 20,
+        "success_rate": 0.1709,
+        "average_precision": 0.3914,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.4,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1548,
+        "weights": [
+          0.1013,
+          -0.0609,
+          0.0087
+        ],
+        "bias": -1.9028,
+        "standardization": [
+          [
+            0.2341,
+            0.2626
+          ],
+          [
+            15.0135,
+            12.4691
+          ],
+          [
+            0.691,
+            0.0693
+          ]
+        ]
+      },
+      "LTK": {
+        "n_designs": 33,
+        "n_binders": 3,
+        "success_rate": 0.0909,
+        "average_precision": 1.0,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.15,
+        "f1_threshold": 0.1561,
+        "weights": [
+          0.1008,
+          -0.0607,
+          0.0092
+        ],
+        "bias": -1.8884,
+        "standardization": [
+          [
+            0.2426,
+            0.2663
+          ],
+          [
+            14.6952,
+            12.4448
+          ],
+          [
+            0.6903,
+            0.0692
+          ]
+        ]
+      },
+      "Mdm2": {
+        "n_designs": 96,
+        "n_binders": 55,
+        "success_rate": 0.5729,
+        "average_precision": 0.6904,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.8,
+        "precision_at_20": 0.75,
+        "f1_threshold": 0.1421,
+        "weights": [
+          0.0888,
+          -0.0535,
+          0.0128
+        ],
+        "bias": -1.9768,
+        "standardization": [
+          [
+            0.2304,
+            0.2591
+          ],
+          [
+            14.9799,
+            12.4609
+          ],
+          [
+            0.6908,
+            0.0694
+          ]
+        ]
+      },
+      "Pdl1": {
+        "n_designs": 95,
+        "n_binders": 12,
+        "success_rate": 0.1263,
+        "average_precision": 0.5916,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.1565,
+        "weights": [
+          0.1022,
+          -0.0614,
+          0.0073
+        ],
+        "bias": -1.8921,
+        "standardization": [
+          [
+            0.2352,
+            0.2629
+          ],
+          [
+            14.9276,
+            12.4667
+          ],
+          [
+            0.6915,
+            0.0687
+          ]
+        ]
+      },
+      "SARS_CoV2_RBD": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.68,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1562,
+        "weights": [
+          0.1002,
+          -0.0607,
+          0.0089
+        ],
+        "bias": -1.885,
+        "standardization": [
+          [
+            0.2461,
+            0.2664
+          ],
+          [
+            14.5694,
+            12.3641
+          ],
+          [
+            0.6901,
+            0.0695
+          ]
+        ]
+      },
+      "TrkA": {
+        "n_designs": 128,
+        "n_binders": 9,
+        "success_rate": 0.0703,
+        "average_precision": 0.3238,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.25,
+        "f1_threshold": 0.1597,
+        "weights": [
+          0.1068,
+          -0.0635,
+          0.0094
+        ],
+        "bias": -1.879,
+        "standardization": [
+          [
+            0.2324,
+            0.2604
+          ],
+          [
+            15.0342,
+            12.4686
+          ],
+          [
+            0.69,
+            0.0696
+          ]
+        ]
+      },
+      "VirB8": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.5886,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1563,
+        "weights": [
+          0.1012,
+          -0.061,
+          0.0094
+        ],
+        "bias": -1.8851,
+        "standardization": [
+          [
+            0.2462,
+            0.2667
+          ],
+          [
+            14.1625,
+            11.906
+          ],
+          [
+            0.6886,
+            0.069
+          ]
+        ]
+      },
+      "pMHC_NY1": {
+        "n_designs": 132,
+        "n_binders": 43,
+        "success_rate": 0.3258,
+        "average_precision": 0.6796,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.7,
+        "f1_threshold": 0.1484,
+        "weights": [
+          0.0957,
+          -0.0564,
+          0.0125
+        ],
+        "bias": -1.9451,
+        "standardization": [
+          [
+            0.2307,
+            0.2624
+          ],
+          [
+            15.1349,
+            12.3774
+          ],
+          [
+            0.692,
+            0.0691
+          ]
+        ]
+      },
+      "pMHC_SILSY1": {
+        "n_designs": 96,
+        "n_binders": 2,
+        "success_rate": 0.0208,
+        "average_precision": 0.1607,
+        "precision_at_5": 0.2,
+        "precision_at_10": 0.1,
+        "precision_at_20": 0.05,
+        "f1_threshold": 0.1598,
+        "weights": [
+          0.1072,
+          -0.0647,
+          0.0067
+        ],
+        "bias": -1.8728,
+        "standardization": [
+          [
+            0.2333,
+            0.2636
+          ],
+          [
+            15.0258,
+            12.4264
+          ],
+          [
+            0.692,
+            0.0687
+          ]
+        ]
+      },
+      "sntx": {
+        "n_designs": 49,
+        "n_binders": 7,
+        "success_rate": 0.1429,
+        "average_precision": 0.8444,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1558,
+        "weights": [
+          0.1006,
+          -0.0611,
+          0.0098
+        ],
+        "bias": -1.8925,
+        "standardization": [
+          [
+            0.2396,
+            0.2657
+          ],
+          [
+            14.8337,
+            12.4533
+          ],
+          [
+            0.6904,
+            0.0693
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "feature_set": "7_feature_full",
+    "feature_names": [
+      "af3_ipSAE_min",
+      "af3_iptm_avg",
+      "RMSD_binder",
+      "input_interface_sc",
+      "af3_dG_SASA_ratio",
+      "af3_pDockQ2_max",
+      "af3_min_pae_contact"
+    ],
+    "n_features": 7,
+    "n_targets": 15,
+    "n_total": 3760,
+    "n_binders": 436,
+    "median_AP": 0.603,
+    "mean_AP": 0.5294,
+    "global_AP": 0.3606,
+    "global_precision_at_10": 0.9,
+    "global_precision_at_20": 0.9,
+    "per_target": {
+      "EGFR": {
+        "n_designs": 434,
+        "n_binders": 28,
+        "success_rate": 0.0645,
+        "average_precision": 0.338,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1882,
+        "weights": [
+          0.0834,
+          0.0685,
+          -0.0566,
+          0.0089,
+          -0.0477,
+          0.0752,
+          -0.0479
+        ],
+        "bias": -1.8649,
+        "standardization": [
+          [
+            0.2458,
+            0.2683
+          ],
+          [
+            0.5319,
+            0.2553
+          ],
+          [
+            13.3872,
+            11.0727
+          ],
+          [
+            0.7002,
+            0.0582
+          ],
+          [
+            -2.6942,
+            0.4221
+          ],
+          [
+            0.314,
+            0.3351
+          ],
+          [
+            11.3205,
+            10.9089
+          ]
+        ]
+      },
+      "FGFR2": {
+        "n_designs": 2123,
+        "n_binders": 193,
+        "success_rate": 0.0909,
+        "average_precision": 0.4112,
+        "precision_at_5": 1.0,
+        "precision_at_10": 0.9,
+        "precision_at_20": 0.9,
+        "f1_threshold": 0.1966,
+        "weights": [
+          0.091,
+          0.0612,
+          -0.0425,
+          0.0302,
+          -0.0655,
+          0.076,
+          -0.0517
+        ],
+        "bias": -1.691,
+        "standardization": [
+          [
+            0.363,
+            0.2868
+          ],
+          [
+            0.6612,
+            0.2768
+          ],
+          [
+            13.1596,
+            16.0737
+          ],
+          [
+            0.651,
+            0.0746
+          ],
+          [
+            -2.52,
+            0.4567
+          ],
+          [
+            0.4765,
+            0.3655
+          ],
+          [
+            8.4364,
+            10.3606
+          ]
+        ]
+      },
+      "IL10Ra": {
+        "n_designs": 22,
+        "n_binders": 2,
+        "success_rate": 0.0909,
+        "average_precision": 0.1043,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.0,
+        "precision_at_20": 0.1,
+        "f1_threshold": 0.1809,
+        "weights": [
+          0.0827,
+          0.0637,
+          -0.0531,
+          0.0122,
+          -0.0481,
+          0.0735,
+          -0.0477
+        ],
+        "bias": -1.9095,
+        "standardization": [
+          [
+            0.2428,
+            0.266
+          ],
+          [
+            0.5365,
+            0.2583
+          ],
+          [
+            14.5448,
+            12.2421
+          ],
+          [
+            0.6904,
+            0.069
+          ],
+          [
+            -2.6433,
+            0.4438
+          ],
+          [
+            0.3088,
+            0.3305
+          ],
+          [
+            11.4471,
+            10.9101
+          ]
+        ]
+      },
+      "IL2Ra": {
+        "n_designs": 66,
+        "n_binders": 6,
+        "success_rate": 0.0909,
+        "average_precision": 0.6357,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1817,
+        "weights": [
+          0.0824,
+          0.0638,
+          -0.0524,
+          0.0113,
+          -0.0476,
+          0.074,
+          -0.0479
+        ],
+        "bias": -1.9073,
+        "standardization": [
+          [
+            0.2393,
+            0.2657
+          ],
+          [
+            0.5322,
+            0.2583
+          ],
+          [
+            14.8509,
+            12.4952
+          ],
+          [
+            0.6911,
+            0.0688
+          ],
+          [
+            -2.6402,
+            0.4456
+          ],
+          [
+            0.3041,
+            0.3302
+          ],
+          [
+            11.6184,
+            10.9338
+          ]
+        ]
+      },
+      "IL7Ra": {
+        "n_designs": 171,
+        "n_binders": 38,
+        "success_rate": 0.2222,
+        "average_precision": 0.5096,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.65,
+        "f1_threshold": 0.1751,
+        "weights": [
+          0.0798,
+          0.0609,
+          -0.0502,
+          0.0142,
+          -0.0461,
+          0.0704,
+          -0.0454
+        ],
+        "bias": -1.9451,
+        "standardization": [
+          [
+            0.235,
+            0.2638
+          ],
+          [
+            0.5291,
+            0.2569
+          ],
+          [
+            15.0631,
+            12.4618
+          ],
+          [
+            0.6902,
+            0.0693
+          ],
+          [
+            -2.6376,
+            0.4463
+          ],
+          [
+            0.2985,
+            0.3275
+          ],
+          [
+            11.6771,
+            10.9263
+          ]
+        ]
+      },
+      "InsulinR": {
+        "n_designs": 117,
+        "n_binders": 20,
+        "success_rate": 0.1709,
+        "average_precision": 0.4116,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.45,
+        "f1_threshold": 0.18,
+        "weights": [
+          0.0825,
+          0.0629,
+          -0.0518,
+          0.0115,
+          -0.0469,
+          0.073,
+          -0.0471
+        ],
+        "bias": -1.9227,
+        "standardization": [
+          [
+            0.2341,
+            0.2626
+          ],
+          [
+            0.5293,
+            0.2578
+          ],
+          [
+            15.0135,
+            12.4691
+          ],
+          [
+            0.691,
+            0.0693
+          ],
+          [
+            -2.6359,
+            0.4454
+          ],
+          [
+            0.2981,
+            0.3272
+          ],
+          [
+            11.7068,
+            10.9383
+          ]
+        ]
+      },
+      "LTK": {
+        "n_designs": 33,
+        "n_binders": 3,
+        "success_rate": 0.0909,
+        "average_precision": 1.0,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.15,
+        "f1_threshold": 0.1818,
+        "weights": [
+          0.0819,
+          0.0631,
+          -0.0514,
+          0.0121,
+          -0.0482,
+          0.0726,
+          -0.0471
+        ],
+        "bias": -1.9083,
+        "standardization": [
+          [
+            0.2426,
+            0.2663
+          ],
+          [
+            0.5355,
+            0.2584
+          ],
+          [
+            14.6952,
+            12.4448
+          ],
+          [
+            0.6903,
+            0.0692
+          ],
+          [
+            -2.6414,
+            0.4455
+          ],
+          [
+            0.3085,
+            0.3308
+          ],
+          [
+            11.4685,
+            10.9136
+          ]
+        ]
+      },
+      "Mdm2": {
+        "n_designs": 96,
+        "n_binders": 55,
+        "success_rate": 0.5729,
+        "average_precision": 0.6458,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.65,
+        "f1_threshold": 0.1644,
+        "weights": [
+          0.0727,
+          0.0559,
+          -0.0457,
+          0.015,
+          -0.0453,
+          0.0649,
+          -0.0422
+        ],
+        "bias": -1.9928,
+        "standardization": [
+          [
+            0.2304,
+            0.2591
+          ],
+          [
+            0.5266,
+            0.2558
+          ],
+          [
+            14.9799,
+            12.4609
+          ],
+          [
+            0.6908,
+            0.0694
+          ],
+          [
+            -2.6356,
+            0.4472
+          ],
+          [
+            0.2947,
+            0.3244
+          ],
+          [
+            11.7653,
+            10.9227
+          ]
+        ]
+      },
+      "Pdl1": {
+        "n_designs": 95,
+        "n_binders": 12,
+        "success_rate": 0.1263,
+        "average_precision": 0.6779,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.5,
+        "f1_threshold": 0.1817,
+        "weights": [
+          0.083,
+          0.0634,
+          -0.052,
+          0.0101,
+          -0.0467,
+          0.0737,
+          -0.048
+        ],
+        "bias": -1.9124,
+        "standardization": [
+          [
+            0.2352,
+            0.2629
+          ],
+          [
+            0.5304,
+            0.2585
+          ],
+          [
+            14.9276,
+            12.4667
+          ],
+          [
+            0.6915,
+            0.0687
+          ],
+          [
+            -2.6419,
+            0.4468
+          ],
+          [
+            0.3001,
+            0.3285
+          ],
+          [
+            11.7189,
+            10.9467
+          ]
+        ]
+      },
+      "SARS_CoV2_RBD": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.7275,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1799,
+        "weights": [
+          0.0816,
+          0.0626,
+          -0.0513,
+          0.0119,
+          -0.0477,
+          0.0722,
+          -0.0464
+        ],
+        "bias": -1.9046,
+        "standardization": [
+          [
+            0.2461,
+            0.2664
+          ],
+          [
+            0.5413,
+            0.2563
+          ],
+          [
+            14.5694,
+            12.3641
+          ],
+          [
+            0.6901,
+            0.0695
+          ],
+          [
+            -2.6523,
+            0.4382
+          ],
+          [
+            0.3129,
+            0.3307
+          ],
+          [
+            11.2409,
+            10.8584
+          ]
+        ]
+      },
+      "TrkA": {
+        "n_designs": 128,
+        "n_binders": 9,
+        "success_rate": 0.0703,
+        "average_precision": 0.2647,
+        "precision_at_5": 0.2,
+        "precision_at_10": 0.2,
+        "precision_at_20": 0.2,
+        "f1_threshold": 0.1867,
+        "weights": [
+          0.0868,
+          0.0653,
+          -0.0539,
+          0.0124,
+          -0.0497,
+          0.077,
+          -0.0485
+        ],
+        "bias": -1.9006,
+        "standardization": [
+          [
+            0.2324,
+            0.2604
+          ],
+          [
+            0.5289,
+            0.2569
+          ],
+          [
+            15.0342,
+            12.4686
+          ],
+          [
+            0.69,
+            0.0696
+          ],
+          [
+            -2.6357,
+            0.4457
+          ],
+          [
+            0.296,
+            0.3243
+          ],
+          [
+            11.7088,
+            10.9196
+          ]
+        ]
+      },
+      "VirB8": {
+        "n_designs": 99,
+        "n_binders": 9,
+        "success_rate": 0.0909,
+        "average_precision": 0.603,
+        "precision_at_5": 0.6,
+        "precision_at_10": 0.5,
+        "precision_at_20": 0.3,
+        "f1_threshold": 0.1801,
+        "weights": [
+          0.0823,
+          0.063,
+          -0.0517,
+          0.0122,
+          -0.0473,
+          0.0727,
+          -0.0469
+        ],
+        "bias": -1.905,
+        "standardization": [
+          [
+            0.2462,
+            0.2667
+          ],
+          [
+            0.5394,
+            0.2589
+          ],
+          [
+            14.1625,
+            11.906
+          ],
+          [
+            0.6886,
+            0.069
+          ],
+          [
+            -2.6412,
+            0.4454
+          ],
+          [
+            0.3124,
+            0.3312
+          ],
+          [
+            11.3228,
+            10.8958
+          ]
+        ]
+      },
+      "pMHC_NY1": {
+        "n_designs": 132,
+        "n_binders": 43,
+        "success_rate": 0.3258,
+        "average_precision": 0.6053,
+        "precision_at_5": 0.4,
+        "precision_at_10": 0.6,
+        "precision_at_20": 0.6,
+        "f1_threshold": 0.1719,
+        "weights": [
+          0.0781,
+          0.0591,
+          -0.048,
+          0.0146,
+          -0.05,
+          0.0681,
+          -0.0445
+        ],
+        "bias": -1.9634,
+        "standardization": [
+          [
+            0.2307,
+            0.2624
+          ],
+          [
+            0.5214,
+            0.2519
+          ],
+          [
+            15.1349,
+            12.3774
+          ],
+          [
+            0.692,
+            0.0691
+          ],
+          [
+            -2.6477,
+            0.4495
+          ],
+          [
+            0.2882,
+            0.3173
+          ],
+          [
+            11.8422,
+            10.9295
+          ]
+        ]
+      },
+      "pMHC_SILSY1": {
+        "n_designs": 96,
+        "n_binders": 2,
+        "success_rate": 0.0208,
+        "average_precision": 0.068,
+        "precision_at_5": 0.0,
+        "precision_at_10": 0.0,
+        "precision_at_20": 0.05,
+        "f1_threshold": 0.1924,
+        "weights": [
+          0.0862,
+          0.0687,
+          -0.0548,
+          0.0096,
+          -0.0448,
+          0.0804,
+          -0.0492
+        ],
+        "bias": -1.8957,
+        "standardization": [
+          [
+            0.2333,
+            0.2636
+          ],
+          [
+            0.5249,
+            0.2534
+          ],
+          [
+            15.0258,
+            12.4264
+          ],
+          [
+            0.692,
+            0.0687
+          ],
+          [
+            -2.6519,
+            0.4441
+          ],
+          [
+            0.2927,
+            0.3208
+          ],
+          [
+            11.7575,
+            10.9233
+          ]
+        ]
+      },
+      "sntx": {
+        "n_designs": 49,
+        "n_binders": 7,
+        "success_rate": 0.1429,
+        "average_precision": 0.9379,
+        "precision_at_5": 0.8,
+        "precision_at_10": 0.7,
+        "precision_at_20": 0.35,
+        "f1_threshold": 0.1806,
+        "weights": [
+          0.0816,
+          0.0634,
+          -0.0519,
+          0.0126,
+          -0.048,
+          0.0729,
+          -0.0476
+        ],
+        "bias": -1.9126,
+        "standardization": [
+          [
+            0.2396,
+            0.2657
+          ],
+          [
+            0.5326,
+            0.2583
+          ],
+          [
+            14.8337,
+            12.4533
+          ],
+          [
+            0.6904,
+            0.0693
+          ],
+          [
+            -2.6362,
+            0.4435
+          ],
+          [
+            0.304,
+            0.3295
+          ],
+          [
+            11.6068,
+            10.9326
+          ]
+        ]
+      }
+    }
+  }
+]
